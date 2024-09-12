@@ -162,10 +162,10 @@ ScrollReveal().reveal('footer .group', { delay: 500, origin: 'top', interval : 2
 
 function downloadCV() {
     // Replace 'path/to/your-cv-file.pdf' with the actual path to your CV file on your server
-    var cvUrl = "documents/EMMANUEL ONJORO - CV.pdf";
+    var cvUrl = "documents/Official Rosebell Wariara CV.pdf";
     var link = document.createElement('a');
     link.href = cvUrl;
-    link.download = 'EMMANUEL ONJORO - CV.pdf'; // The name of the downloaded file
+    link.download = 'Official Rosebell Wariara CV.pdf'; // The name of the downloaded file
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
