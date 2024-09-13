@@ -197,6 +197,9 @@
 .nav-menu-btn{
     display: none;
 }
+.nav-close-btn{
+    display: none;
+}
 
 /* Home image */
 
@@ -1032,7 +1035,7 @@ footer a{
 .footer-copy-right p span{
     font-style: italic;
     font-weight: 700;
-    color: #c5cadf;
+    color: var(--first-color);
 }
 
 
@@ -1048,7 +1051,7 @@ footer a{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: var(---transparent-color-01);  
+        background: transparent;  
         visibility: hidden;
         opacity: 0;  
         transition: .3s ease;
@@ -1057,9 +1060,10 @@ footer a{
         visibility: visible;
         opacity: 1;
     }
-    .nav-close-btn{
+    .nav-items  .nav-close-btn{
+    color: var(--first-color);
         position: absolute;
-        background: url(images/onjoro.com.jpg) no-repeat;
+        background: var(--hover-color);
         filter: var(--second-color); 
         background-size: 12px;
         width: 40px;
@@ -1068,10 +1072,15 @@ footer a{
         top: 0;
         right: 0;
         margin: 10px;
+        border-radius: 20%;
         cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
     .nav-menu-btn{
-        background: url(images/onjoro.com.jpg) no-repeat;
+        background: var(--hover-color);
+        color: var(--first-color);
         filter: var(--second-color);
         background-size: 30px;
         background-position: center;
@@ -1079,6 +1088,10 @@ footer a{
         height: 40px;
         cursor: pointer;
         display: block;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 20%;
     }
     .nav-items{
         position: relative;
